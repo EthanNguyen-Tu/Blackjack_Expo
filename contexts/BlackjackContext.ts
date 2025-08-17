@@ -1,6 +1,9 @@
+import { BlackjackState } from "@/constants/BlackjackStates";
 import { createContext } from "react";
 
 interface BlackjackContextType {
+    gameState: BlackjackState;
+    setGameState: React.Dispatch<React.SetStateAction<BlackjackState>>;
     numOfDecks: number;
     setNumOfDecks: React.Dispatch<React.SetStateAction<number>>;
     soft17: boolean;
@@ -12,6 +15,8 @@ interface BlackjackContextType {
 }
 
 export const BlackjackContext = createContext<BlackjackContextType>({
+    gameState: BlackjackState.START,
+    setGameState: () => {},
     numOfDecks: 1,
     setNumOfDecks: () => {},
     soft17: false,
