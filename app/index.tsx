@@ -1,15 +1,22 @@
-import { Text, View } from "react-native";
+import Blackjack from "@/components/Blackjack";
+import { BlackjackProvider } from "@/providers/BlackjackProvider";
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
 export default function Index() {
-  return (
-    <View
-      style={{
+    return (
+        <BlackjackProvider>
+            <View style={styles.container}>
+                <Blackjack />
+            </View>
+        </BlackjackProvider>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-}
+    },
+});
