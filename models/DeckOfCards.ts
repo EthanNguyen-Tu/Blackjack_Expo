@@ -1,4 +1,4 @@
-import { cards } from "@/components/PlayingCard";
+import { cards } from "@/constants/PlayingCards";
 
 export class DeckOfCards {
     private number_of_decks: number;

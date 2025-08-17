@@ -1,4 +1,4 @@
-import { CardRoyalty } from "@/components/PlayingCard";
+import { CardRoyalty } from "@/constants/PlayingCards";
 
 export class HandOfCards {
     private hand: string[];
