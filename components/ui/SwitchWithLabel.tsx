@@ -1,5 +1,5 @@
 import { View, Switch, StyleSheet } from "react-native";
-import { ThemedText } from "../ThemedText";
+import { ThemedText } from "@/components/ThemedText";
 
 export default function SwitchWithLabel({
     label,

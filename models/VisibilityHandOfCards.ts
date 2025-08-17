@@ -1,4 +1,4 @@
-import { HandOfCards } from "./HandOfCards";
+import { HandOfCards } from "@/models/HandOfCards";
 
 export class VisibilityHandOfCards {
     private visibleCards: HandOfCards;

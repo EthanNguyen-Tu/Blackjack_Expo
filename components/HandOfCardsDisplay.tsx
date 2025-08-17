@@ -1,7 +1,7 @@
 import React from "react";
-import { HandOfCards } from "./HandOfCards";
-import PlayingCard from "./PlayingCard";
-import { VisibilityHandOfCards } from "./VisibilityHandOfCards";
+import { HandOfCards } from "@/models/HandOfCards";
+import PlayingCard from "@/components/PlayingCard";
+import { VisibilityHandOfCards } from "@/models/VisibilityHandOfCards";
 import { StyleProp, StyleSheet, View, ViewStyle } from "react-native";
 
 export enum HandOfCardsVariants {
