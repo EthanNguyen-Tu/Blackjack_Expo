@@ -2,18 +2,18 @@ import { createContext } from "react";
 
 interface SettingsContextType {
     showStatsMenu: boolean;
-    toggleStatsMenu: React.Dispatch<React.SetStateAction<boolean>>;
+    setShowStatsMenu: React.Dispatch<React.SetStateAction<boolean>>;
     showHandSum: boolean;
-    toggleHandSum: React.Dispatch<React.SetStateAction<boolean>>;
+    setShowHandSum: React.Dispatch<React.SetStateAction<boolean>>;
     showCardsNotSeen: boolean;
-    toggleCardsNotSeen: React.Dispatch<React.SetStateAction<boolean>>;
+    setShowCardsNotSeen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const SettingsContext = createContext<SettingsContextType>({
     showStatsMenu: true,
-    toggleStatsMenu: () => {},
+    setShowStatsMenu: () => {},
     showHandSum: true,
-    toggleHandSum: () => {},
+    setShowHandSum: () => {},
     showCardsNotSeen: true,
-    toggleCardsNotSeen: () => {},
+    setShowCardsNotSeen: () => {},
 });

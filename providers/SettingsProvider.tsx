@@ -6,22 +6,19 @@ type SettingsProviderProps = {
 };
 
 export const SettingsProvider = ({ children }: SettingsProviderProps) => {
-    const [showStatsMenu, setShowStatsMenu] = useState(true);
-    const toggleStatsMenu = () => setShowStatsMenu((prev) => !prev);
-    const [showHandSum, setShowHandSum] = useState(true);
-    const toggleHandSum = () => setShowHandSum((prev) => !prev);
-    const [showCardsNotSeen, setShowCardsNotSeen] = useState(true);
-    const toggleCardsNotSeen = () => setShowCardsNotSeen((prev) => !prev);
+    const [showStatsMenu, setShowStatsMenu] = useState<boolean>(true);
+    const [showHandSum, setShowHandSum] = useState<boolean>(true);
+    const [showCardsNotSeen, setShowCardsNotSeen] = useState<boolean>(true);
 
     return (
         <SettingsContext.Provider
             value={{
                 showStatsMenu,
-                toggleStatsMenu,
+                setShowStatsMenu,
                 showHandSum,
-                toggleHandSum,
+                setShowHandSum,
                 showCardsNotSeen,
-                toggleCardsNotSeen,
+                setShowCardsNotSeen,
             }}
         >
             {children}
